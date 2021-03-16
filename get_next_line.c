@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/18 15:41:37 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/03/12 15:28:31 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/16 15:01:56 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static char		*ft_join(char *s1, char *s2, char end)
 	tmp = malloc(ft_strlend(s2, end) + line_len + 1);
 	if (!tmp)
 		return (NULL);
-	ft_strlcpy(tmp, s1);
+	ft_strcpy(tmp, s1);
 	i = 0;
 	while (s2[i] && s2[i] != end)
 	{
