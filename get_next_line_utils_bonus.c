@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/18 15:42:05 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/03/12 15:32:38 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:36:38 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 **	Amount of chars till the end char ('\n' in get_next_line)
 */
 
-int			ft_strlend(const char *s, char end)
+int	ft_strlend(const char *s, char end)
 {
-	int len;
+	int	len;
 
 	if (!s)
 		return (0);
@@ -34,9 +34,9 @@ int			ft_strlend(const char *s, char end)
 **	Copies src string into dst if src exists.
 */
 
-void		ft_strcpy(char *dst, const char *src)
+void	ft_strcpy(char *dst, const char *src)
 {
-	int i;
+	int	i;
 
 	if (!src)
 		return ;
@@ -59,9 +59,9 @@ void		ft_strcpy(char *dst, const char *src)
 **	0 if char c is not in string
 */
 
-int			ft_modstr(char *s, char c)
+int	ft_modstr(char *s, char c)
 {
-	int i;
+	int	i;
 
 	if (!s)
 		return (0);

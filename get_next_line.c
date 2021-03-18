@@ -6,7 +6,7 @@
 /*   By: mdaan <mdaan@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/18 15:41:37 by mdaan         #+#    #+#                 */
-/*   Updated: 2021/03/16 15:01:56 by mdaan         ########   odam.nl         */
+/*   Updated: 2021/03/18 19:34:19 by mdaan         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 **	- NULL if malloc failed
 */
 
-static char		*ft_join(char *s1, char *s2, char end)
+static char	*ft_join(char *s1, char *s2, char end)
 {
 	int		i;
 	int		line_len;
@@ -60,7 +60,7 @@ static char		*ft_join(char *s1, char *s2, char end)
 **	-1 : An error happened
 */
 
-int				get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	int			ret;
 	static char	buf[BUFFER_SIZE + 1];
